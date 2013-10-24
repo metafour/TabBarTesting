@@ -22,6 +22,9 @@
 		019856BC18179E7400E56E1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0198569B18179E7400E56E1F /* UIKit.framework */; };
 		019856C418179E7400E56E1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019856C218179E7400E56E1F /* InfoPlist.strings */; };
 		019856C618179E7400E56E1F /* TabBarTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 019856C518179E7400E56E1F /* TabBarTestingTests.m */; };
+		019857161817AF9000E56E1F /* TBTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019857151817AF9000E56E1F /* TBTTableViewController.m */; };
+		0198571B1818C66D00E56E1F /* HNRSSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 019857181818C66D00E56E1F /* HNRSSChannel.m */; };
+		0198571C1818C66D00E56E1F /* HNRSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0198571A1818C66D00E56E1F /* HNRSSItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		019856C118179E7400E56E1F /* TabBarTestingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarTestingTests-Info.plist"; sourceTree = "<group>"; };
 		019856C318179E7400E56E1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		019856C518179E7400E56E1F /* TabBarTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarTestingTests.m; sourceTree = "<group>"; };
+		019857141817AF9000E56E1F /* TBTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTTableViewController.h; sourceTree = "<group>"; };
+		019857151817AF9000E56E1F /* TBTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTTableViewController.m; sourceTree = "<group>"; };
+		019857171818C66D00E56E1F /* HNRSSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRSSChannel.h; sourceTree = "<group>"; };
+		019857181818C66D00E56E1F /* HNRSSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNRSSChannel.m; sourceTree = "<group>"; };
+		019857191818C66D00E56E1F /* HNRSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRSSItem.h; sourceTree = "<group>"; };
+		0198571A1818C66D00E56E1F /* HNRSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNRSSItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +127,16 @@
 				019856A618179E7400E56E1F /* TBTAppDelegate.h */,
 				019856A718179E7400E56E1F /* TBTAppDelegate.m */,
 				019856A918179E7400E56E1F /* Main.storyboard */,
+				019857141817AF9000E56E1F /* TBTTableViewController.h */,
+				019857151817AF9000E56E1F /* TBTTableViewController.m */,
 				019856AC18179E7400E56E1F /* TBTFirstViewController.h */,
 				019856AD18179E7400E56E1F /* TBTFirstViewController.m */,
 				019856AF18179E7400E56E1F /* TBTSecondViewController.h */,
 				019856B018179E7400E56E1F /* TBTSecondViewController.m */,
+				019857171818C66D00E56E1F /* HNRSSChannel.h */,
+				019857181818C66D00E56E1F /* HNRSSChannel.m */,
+				019857191818C66D00E56E1F /* HNRSSItem.h */,
+				0198571A1818C66D00E56E1F /* HNRSSItem.m */,
 				019856B218179E7400E56E1F /* Images.xcassets */,
 				0198569E18179E7400E56E1F /* Supporting Files */,
 			);
@@ -256,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				019856A418179E7400E56E1F /* main.m in Sources */,
+				019857161817AF9000E56E1F /* TBTTableViewController.m in Sources */,
+				0198571B1818C66D00E56E1F /* HNRSSChannel.m in Sources */,
 				019856B118179E7400E56E1F /* TBTSecondViewController.m in Sources */,
+				0198571C1818C66D00E56E1F /* HNRSSItem.m in Sources */,
 				019856AE18179E7400E56E1F /* TBTFirstViewController.m in Sources */,
 				019856A818179E7400E56E1F /* TBTAppDelegate.m in Sources */,
 			);
@@ -467,6 +485,7 @@
 				019856CB18179E7400E56E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		019856CC18179E7400E56E1F /* Build configuration list for PBXNativeTarget "TabBarTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +494,7 @@
 				019856CE18179E7400E56E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

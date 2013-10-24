@@ -7,12 +7,18 @@
 //
 
 #import "TBTFirstViewController.h"
-
-@interface TBTFirstViewController ()
-
-@end
+#import "HNRSSItem.h"
 
 @implementation TBTFirstViewController
+
+@synthesize webView, item;
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSURL *url = [[NSURL alloc] initWithString:[item link]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [webView loadRequest:request];
+}
 
 - (void)viewDidLoad
 {

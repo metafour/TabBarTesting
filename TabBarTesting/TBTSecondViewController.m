@@ -7,12 +7,18 @@
 //
 
 #import "TBTSecondViewController.h"
-
-@interface TBTSecondViewController ()
-
-@end
+#import "HNRSSItem.h"
 
 @implementation TBTSecondViewController
+
+@synthesize webView, item;
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSURL *url = [NSURL URLWithString:[item commentsLink]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [webView loadRequest:request];
+}
 
 - (void)viewDidLoad
 {

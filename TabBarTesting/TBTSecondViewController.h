@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class HNRSSItem;
+
 @interface TBTSecondViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (nonatomic, weak) HNRSSItem *item;
 
 @end
